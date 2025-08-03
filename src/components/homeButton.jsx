@@ -8,12 +8,30 @@ const HomeButton = ({
   fadeOutStateArr,
   setFadeOutStateArr,
 }) => {
-  const pad = useMemo(() => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const resize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", resize);
+    return () => window.removeEventListener("resize", resize);
+  });
+
+  const isMd = windowWidth >= 768;
+  const padL = useMemo(() => {
     if (name == currentState) {
-      return "space";
+      return "0px";
+    } else if (isMd) {
+      return `${(Math.floor(Math.random() * 10) + 20) * 4}px`;
     }
-    return `${(Math.floor(Math.random() * 10) + 20) * 4}px`;
-  }, [currentState]);
+
+    return `30px`;
+  }, [currentState, isMd]);
+
+  const margL = useMemo(() => {
+    if (isMd) {
+      return `-100px`;
+    }
+    return `0px`;
+  }, [currentState, window.innerWidth]);
 
   const [fadeInState, setFadeInState] = useState(false);
   const [animating, setAnimating] = useState(false);
@@ -60,7 +78,7 @@ const HomeButton = ({
         className={`
           ${
             fadeOutStateArr[name] && name == currentState
-              ? "opacity-0 top-0 absolute"
+              ? "absolute top-10 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 cursor-pointer"
               : ""
           }
           ${
@@ -70,15 +88,16 @@ const HomeButton = ({
           }
           ${
             fadeInState && !fadeOutStateArr[name] && name == currentState
-              ? "absolute top-0 opacity-100 cursor-pointer"
+              ? "absolute top-10 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-100 cursor-pointer"
               : "opacity-0"
           }
           
           group
-          mt-5 mb-5 -ml-25 mr-10 bg-blue-300/20
-          hover:bg-blue-300/35 ease-in-out buttonAnim`}
+          mt-5 mb-5 -ml-100 md:-ml-25 bg-blue-300/20
+          hover:bg-blue-300/35 ease-in-out buttonAnim z-100`}
         style={{
-          paddingLeft: pad != "space" ? pad : "15px",
+          paddingLeft: fadeInState && name === currentState ? "20px" : padL, // simplify padding when centered
+          marginLeft: fadeInState && name === currentState ? "0px" : margL, // remove margins when centered
         }}
         //
       >

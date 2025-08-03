@@ -1,6 +1,8 @@
 import React, { useEffect, useMemo, useState } from "react";
 import ContentAbout from "./contents/contentAbout";
 import ContentResources from "./contents/contentResources";
+import ContentProjects from "./contents/contentProjects";
+import ContentArt from "./contents/contentArt";
 
 const Content = ({ currentState, fadeOutStateArr }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -10,9 +12,15 @@ const Content = ({ currentState, fadeOutStateArr }) => {
       case "about_me":
         console.log("about_me");
         return <ContentAbout />;
-      case "my_resources":
-        console.log("my_resources");
+      case "resources":
+        console.log("resources");
         return <ContentResources />;
+      case "projects":
+        console.log("projects");
+        return <ContentProjects />;
+      case "art_stuff":
+        console.log("art_stuff");
+        return <ContentArt />;
       default:
         console.log("null");
         return null;

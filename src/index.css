@@ -5,6 +5,11 @@
   --color-bgblue2: #141575;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 /* --bg-x: 70%;
   --bg-y: 25%;
 }

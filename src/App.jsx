@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div
-      className="min-w-screen min-h-screen bg-radial-[at_70%_25%] from-bgblue2 to-slate-950"
+      className="min-w-screen w-full h-full min-h-screen bg-radial-[at_70%_25%] from-bgblue2 to-slate-950"
       // style={{
       //   background:
       //     "radial-gradient(at var(--bg-x) var(--bg-y), #141575, #020618)",
@@ -38,24 +38,23 @@ function App() {
       // }}
     >
       <div
-        className={`flex min-w-screen min-h-screen flex-row justify-center items-center ${
+        className={`flex flex-col md:flex-row w-full min-h-screen justify-center items-center ${
           curState == "home" ? "" : "fixed"
         }`}
       >
-        <div className="border w-[18.75rem] h-[25rem] p-5 flex items-center justify-center ease-in-out duration-300 z-30">
+        <div className=" w-[18.75rem] h-[10rem] md:h-[25rem]  flex items-center justify-center ease-in-out duration-300 z-30">
           <img
             src="src\assets\alex-bw-flowers.png"
             alt="its an image of alex."
             id="profileImg"
             ref={mouseRef}
-            style={{ transform: "none" }}
             className={
-              "object-cover p-0 m-0 transform-3d shadow-2xl ease-in-out transition-opacity duration-600" +
+              "h-full w-full object-cover p-0 m-0 transform-3d shadow-2xl ease-in-out transition-opacity duration-600" +
               (curState == "home" ? " " : " opacity-0")
             }
           />
         </div>
-        <div className=" border min-w-[18.75rem] h-[25rem]">
+        <div className=" min-w-[18.75rem] h-[25rem]">
           <div
             className={
               curState == "home"
@@ -69,7 +68,7 @@ function App() {
             </h4>
           </div>
           <div className="flex flex-col items-start">
-            {["about_me", "my_resources", "projects", "art_stuff"].map(
+            {["about_me", "resources", "projects", "art_stuff"].map(
               (btn, index) => {
                 return (
                   <>
