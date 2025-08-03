@@ -16,7 +16,7 @@ const ContentAbout = () => {
           <div className="flex flex-1 items-center justify-center align-middle overflow-hidden">
             <img
               className="w-full h-full object-cover"
-              src="src\assets\sea.png"
+              src="\assets\sea.png"
               alt="its an image of alex."
             ></img>
           </div>
@@ -59,7 +59,7 @@ const ContentAbout = () => {
           <div className="flex flex-1 overflow-hidden items-end relative">
             <img
               className="w-full h-full object-cover"
-              src="src\assets\judo.png"
+              src="\assets\judo.png"
               alt="judo."
             ></img>
             <p className="absolute w-full bg-black/40 text-right text-white font-mono overflow-hidden p-2">
@@ -69,7 +69,7 @@ const ContentAbout = () => {
           <div className="flex flex-1 overflow-hidden items-end  relative">
             <img
               className="w-full h-full object-cover"
-              src="src\assets\banana.png"
+              src="\assets\banana.png"
               alt="banana."
             ></img>
             <p className="absolute w-full bg-black/40 text-right text-white font-mono overflow-hidden p-2">
@@ -79,7 +79,7 @@ const ContentAbout = () => {
           <div className="flex flex-1 overflow-hidden items-end  relative">
             <img
               className="w-full h-full object-cover"
-              src="src\assets\band.png"
+              src="\assets\band.png"
               alt="band."
             ></img>
             <p className="absolute w-full bg-black/40 text-right text-white font-mono overflow-hidden p-2">

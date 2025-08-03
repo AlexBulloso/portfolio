@@ -16,7 +16,7 @@ const ContentArt = () => {
           <div className="flex flex-1 overflow-hidden items-end relative">
             <img
               className="w-full h-full object-cover"
-              src="src\assets\imslp.png"
+              src="\assets\imslp.png"
               alt="imslp"
             ></img>
             <a
@@ -30,7 +30,7 @@ const ContentArt = () => {
           <div className="flex flex-1 overflow-hidden items-end relative">
             <img
               className="w-full h-full object-cover"
-              src="src\assets\crescentTrance.png"
+              src="\assets\crescentTrance.png"
               alt="crescentTrance"
             ></img>
             <a
@@ -49,7 +49,7 @@ const ContentArt = () => {
           <div className="flex flex-1 overflow-hidden items-end  relative">
             <img
               className="w-full h-full object-cover"
-              src="src\assets\goodreads.png"
+              src="\assets\goodreads.png"
               alt="goodreads"
             ></img>
             <a
@@ -63,7 +63,7 @@ const ContentArt = () => {
           <div className="flex flex-1 overflow-hidden items-end relative">
             <img
               className="w-full h-full object-cover"
-              src="src\assets\nature.png"
+              src="\assets\nature.png"
               alt="nature"
             ></img>
             <a

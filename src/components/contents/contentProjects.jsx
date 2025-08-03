@@ -16,7 +16,7 @@ const ContentProjects = () => {
           <div className="flex flex-1 overflow-hidden items-end  relative">
             <img
               className="w-full h-full object-cover"
-              src="src\assets\tetris.png"
+              src="\assets\tetris.png"
               alt="tetris"
             ></img>
             <a
@@ -30,7 +30,7 @@ const ContentProjects = () => {
           <div className="flex flex-1 overflow-hidden items-end relative">
             <img
               className="w-full h-full object-cover"
-              src="src\assets\upsilonBOT.png"
+              src="\assets\upsilonBOT.png"
               alt="upsilonBOT"
             ></img>
             <a
@@ -44,7 +44,7 @@ const ContentProjects = () => {
           <div className="flex flex-1 overflow-hidden items-end relative">
             <img
               className="w-full h-full object-cover"
-              src="src\assets\proteomics.png"
+              src="\assets\proteomics.png"
               alt="proteomics"
             ></img>
             <a
@@ -63,7 +63,7 @@ const ContentProjects = () => {
           <div className="flex flex-1 overflow-hidden items-end relative">
             <img
               className="w-full h-full object-cover"
-              src="src\assets\avt.png"
+              src="\assets\avt.png"
               alt="avt"
             ></img>
             <a
@@ -78,7 +78,7 @@ const ContentProjects = () => {
           <div className="flex flex-1 overflow-hidden items-end  relative">
             <img
               className="w-full h-full object-cover"
-              src="src\assets\portfolio.png"
+              src="\assets\portfolio.png"
               alt="portfolio"
             ></img>
             <a
@@ -92,7 +92,7 @@ const ContentProjects = () => {
           <div className="flex flex-1 overflow-hidden items-end relative">
             <img
               className="w-full h-full object-cover"
-              src="src\assets\ISLP.png"
+              src="\assets\ISLP.png"
               alt="ISLP"
             ></img>
             <a

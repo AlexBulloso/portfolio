@@ -44,7 +44,7 @@ function App() {
       >
         <div className=" w-[18.75rem] h-[10rem] md:h-[25rem]  flex items-center justify-center ease-in-out duration-300 z-30">
           <img
-            src="src\assets\alex-bw-flowers.png"
+            src="\assets\alex-bw-flowers.png"
             alt="its an image of alex."
             id="profileImg"
             ref={mouseRef}
