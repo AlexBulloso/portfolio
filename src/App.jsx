@@ -54,7 +54,7 @@ function App() {
             }
           />
         </div>
-        <div className=" min-w-[18.75rem] h-[25rem]">
+        <div className="min-w-[18.75rem] h-[25rem]">
           <div
             className={
               curState == "home"

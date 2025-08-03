@@ -92,7 +92,7 @@ const HomeButton = ({
               : "opacity-0"
           }
           
-          group
+          group text-xl md:text-3xl
           mt-5 mb-5 -ml-100 md:-ml-25 bg-blue-300/20
           hover:bg-blue-300/35 ease-in-out buttonAnim z-100`}
         style={{
@@ -101,7 +101,7 @@ const HomeButton = ({
         }}
         //
       >
-        <span className="text-center -right-11 block relative -bottom-3 text-white text-3xl font-mono ">
+        <span className="text-center -right-11 block relative -bottom-3 text-white  font-mono ">
           {name}
           <span className="group-hover:opacity-100 opacity-0 ease-in-out duration-200">
             {" <"}
