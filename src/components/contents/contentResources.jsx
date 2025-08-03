@@ -22,47 +22,55 @@ const ContentResources = () => {
               <p className=" text-m font-mono pl-2 text-white">
                 - bio, chem, phys OCR G <br />- eng lit AQA (love/war, christmas
                 carol, macbeth)
-                <a
-                  href="src/files/BCPE.apkg"
-                  download="BCPE-GCSE.apkg"
-                  className="text-blue-200 hover:text-blue-800 hover:underline flex justify-end"
-                >
-                  [download]
-                </a>
+                <div className="flex justify-end">
+                  <a
+                    href="src/files/BCPE.apkg"
+                    download="BCPE-GCSE.apkg"
+                    className="text-blue-200 hover:text-blue-800 hover:underline flex justify-end"
+                  >
+                    [download]
+                  </a>
+                </div>
               </p>
 
               <p className=" text-m font-mono pl-2 text-white">
                 - french aqa vocab
-                <a
-                  href="src/files/French.apkg"
-                  download="French-GCSE.apkg"
-                  className="text-blue-200 hover:text-blue-800 hover:underline flex justify-end"
-                >
-                  [download]
-                </a>
+                <div className="flex justify-end">
+                  <a
+                    href="src/files/French.apkg"
+                    download="French-GCSE.apkg"
+                    className="text-blue-200 hover:text-blue-800 hover:underline flex justify-end"
+                  >
+                    [download]
+                  </a>
+                </div>
               </p>
               <h1 className="text-2xl font-bold font-mono text-center text-gray-300 p-2 pb-2 underline">
                 a level stuff
               </h1>
               <p className=" text-m font-mono pl-2 text-white">
                 - bio, chem OCR A
-                <a
-                  href="src/files/BioChem A Level.apkg"
-                  download="BC-ALevel.apkg"
-                  className="text-blue-200 hover:text-blue-800 hover:underline flex justify-end"
-                >
-                  [download]
-                </a>
+                <div className="flex justify-end">
+                  <a
+                    href="src/files/BioChem A Level.apkg"
+                    download="BC-ALevel.apkg"
+                    className="text-blue-200 hover:text-blue-800 hover:underline flex justify-end"
+                  >
+                    [download]
+                  </a>
+                </div>
               </p>
               <p className=" text-m font-mono pl-2 text-white">
                 - fm AQA homemade paper 1 mock + answers
-                <a
-                  href="src/files/ALX Paper 1 202X.zip"
-                  download="ALX FM Paper 1"
-                  className="text-blue-200 hover:text-blue-800 hover:underline flex justify-end"
-                >
-                  [download]
-                </a>
+                <div className="flex justify-end">
+                  <a
+                    href="src/files/ALX Paper 1 202X.zip"
+                    download="ALX FM Paper 1"
+                    className="text-blue-200 hover:text-blue-800 hover:underline flex justify-end"
+                  >
+                    [download]
+                  </a>
+                </div>
               </p>
             </div>
           </div>
@@ -83,13 +91,15 @@ const ContentResources = () => {
                 - mims + metabolism summary sheets <br />
                 - homemade mims mock (2025) <br />
                 - febp notes <br />- assorted fab/homs/mims mcqs
-                <a
-                  href="src/files/cam med IA resources.zip"
-                  download="cam med IA resources.zip"
-                  className="text-blue-200 hover:text-blue-800 hover:underline flex justify-end"
-                >
-                  [download]
-                </a>
+                <div className="flex justify-end">
+                  <a
+                    href="src/files/cam med IA resources.zip"
+                    download="cam med IA resources.zip"
+                    className="text-blue-200 hover:text-blue-800 hover:underline"
+                  >
+                    [download]
+                  </a>
+                </div>
               </p>
 
               <h1 className="text-2xl font-bold font-mono text-center text-gray-300 p-2 pb-2 underline">

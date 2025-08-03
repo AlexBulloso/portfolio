@@ -23,7 +23,7 @@ const HomeButton = ({
       return `${(Math.floor(Math.random() * 10) + 20) * 4}px`;
     }
 
-    return `30px`;
+    return `${Math.floor(Math.random() * 60) + 40}px`;
   }, [currentState, isMd]);
 
   const margL = useMemo(() => {
