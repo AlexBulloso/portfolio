@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div
-      className="min-w-screen w-full h-full min-h-screen bg-radial-[at_70%_25%] from-bgblue2 to-slate-950"
+      className="min-w-screen w-full h-[100dvh] min-h-[100dvh] bg-radial-[at_70%_25%] from-bgblue2 to-slate-950"
       // style={{
       //   background:
       //     "radial-gradient(at var(--bg-x) var(--bg-y), #141575, #020618)",
@@ -38,7 +38,7 @@ function App() {
       // }}
     >
       <div
-        className={`flex flex-col md:flex-row w-full min-h-screen justify-center items-center ${
+        className={`flex flex-col md:flex-row w-full min-h-[100dvh] justify-center items-center ${
           curState == "home" ? "" : "fixed"
         }`}
       >

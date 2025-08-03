@@ -11,6 +11,7 @@ body {
   overflow-y: hidden;
   height: 100%;
   margin: 0;
+  background: radial-gradient(circle at 70% 25%, var(--color-bgblue2), #0f172a);
 }
 
 /* --bg-x: 70%;
